@@ -8,7 +8,17 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            ValueInput input = new ValueInput(3);    
+            CalculatorWithHistory calc = new CalculatorWithHistory();
+            calc.Add(4);
+            calc.Add(new AddOperation(3));
+            calc.Add(new MultiplyOperation(2));
+            calc.Add(new AddOperation(6));
+
+            double result = calc.CalculatedResult();           
+            //Console.WriteLine(result);
+            //Console.WriteLine(calc.GetInputs());
+            Console.WriteLine(calc.GetOnlyAddOperationInputs());
+            Console.WriteLine(calc.ContainsOperation(new AddOperation(3)));
         }
     }
 }

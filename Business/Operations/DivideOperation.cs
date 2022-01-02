@@ -8,7 +8,7 @@ namespace Business.Operations
 {
     public class DivideOperation : OperationBase
     {
-        public DivideOperation(double value) : base("/", value)
+        public DivideOperation(double value = 0) : base("/", value)
         {
 
         }

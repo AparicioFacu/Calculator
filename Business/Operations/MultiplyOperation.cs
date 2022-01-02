@@ -8,7 +8,7 @@ namespace Business.Operations
 {
     public class MultiplyOperation: OperationBase
     {
-        public MultiplyOperation(double value) : base("*", value)
+        public MultiplyOperation(double value = 0) : base("*", value)
         {
 
         }

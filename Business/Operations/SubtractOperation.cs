@@ -8,7 +8,7 @@ namespace Business.Operations
 {
     public class SubtractOperation: OperationBase
     {
-        public SubtractOperation(double value) : base("-", value)
+        public SubtractOperation(double value = 0) : base("-", value)
         {
 
         }
