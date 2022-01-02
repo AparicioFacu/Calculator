@@ -5,8 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI.Views"
         mc:Ignorable="d"
-        Title="CalculatorView" Height="450" Width="800">
+        Title="CalculatorView" Height="350" Width="250">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="#222" Grid.ColumnSpan="4">
+            <Label FontSize="35" Foreground="White" Content="0" HorizontalContentAlignment="Right"/>
+        </StackPanel>
+
+        <!--Buttons-->
+
+        <!--Fila 1-->
+        <Button Style="{StaticResource NumberButton}" Grid.Row="1" Grid.Column="0" Background="#444">AC</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="1" Grid.Column="1" Background="#444" >+/-</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="1" Grid.Column="2" Background="#444" >%</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="1" Grid.Column="3" Background="Orange">÷</Button>
+
+        <!--Fila 2-->
+        <Button Style="{StaticResource NumberButton}" Grid.Row="2" Grid.Column="0" Background="#666" >7</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="2" Grid.Column="1" Background="#666" >8</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="2" Grid.Column="2" Background="#666" >9</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="2" Grid.Column="3" Background="Orange" >x</Button>
+
+        <!--Fila 3-->
+        <Button Style="{StaticResource NumberButton}" Grid.Row="3" Grid.Column="0" Background="#666" >4</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="3" Grid.Column="1" Background="#666" >5</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="3" Grid.Column="2" Background="#666" >6</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="3" Grid.Column="3" Background="Orange">-</Button>
+
+        <!--Fila 4-->
+        <Button Style="{StaticResource NumberButton}" Grid.Row="4" Grid.Column="0" Background="#666" >1</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="4" Grid.Column="1" Background="#666" >2</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="4" Grid.Column="2" Background="#666" >3</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="4" Grid.Column="3" Background="Orange" >+</Button>
+
+        <!--Fila 5-->
+        <Button Style="{StaticResource NumberButton}" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0" Background="#666" >0</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="5" Grid.Column="2" Background="#666" >,</Button>
+        <Button Style="{StaticResource NumberButton}" Grid.Row="5" Grid.Column="3" Background="Orange" >=</Button>
+
     </Grid>
 </Window>

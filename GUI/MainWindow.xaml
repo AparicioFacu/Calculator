@@ -34,66 +34,36 @@
             <Label FontSize="35" Content="Display" HorizontalContentAlignment="Right"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20" >AC</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">+/-</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">%</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">÷</Label>
-        </StackPanel>
+        <!--Buttons-->
+        
+        <!--Fila 1-->
+        <Button FontSize="20" Grid.Row="1" Grid.Column="0" >AC</Button>
+        <Button FontSize="20" Grid.Row="1" Grid.Column="1">+/-</Button>
+        <Button FontSize="20" Grid.Row="1" Grid.Column="2">%</Button>
+        <Button FontSize="20" Grid.Row="1" Grid.Column="3">÷</Button>
 
-        <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">7</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">8</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">9</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">X</Label>
-        </StackPanel>
+        <!--Fila 2-->
+        <Button FontSize="20" Grid.Row="2" Grid.Column="0">7</Button>
+        <Button FontSize="20" Grid.Row="2" Grid.Column="1">8</Button>
+        <Button FontSize="20" Grid.Row="2" Grid.Column="2">9</Button>
+        <Button FontSize="20" Grid.Row="2" Grid.Column="3">X</Button>
 
-        <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">4</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">5</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">6</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">-</Label>
-        </StackPanel>
+        <!--Fila 3-->
+        <Button FontSize="20" Grid.Row="3" Grid.Column="0">4</Button>
+        <Button FontSize="20" Grid.Row="3" Grid.Column="1">5</Button>
+        <Button FontSize="20" Grid.Row="3" Grid.Column="2" >6</Button>
+        <Button FontSize="20" Grid.Row="3" Grid.Column="3">-</Button>
 
-        <StackPanel Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">1</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">2</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">3</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">+</Label>
-        </StackPanel>
+        <!--Fila 4-->
+        <Button FontSize="20" Grid.Row="4" Grid.Column="0">1</Button>
+        <Button FontSize="20" Grid.Row="4" Grid.Column="1">2</Button>
+        <Button FontSize="20" Grid.Row="4" Grid.Column="2">3</Button>
+        <Button FontSize="20" Grid.Row="4" Grid.Column="3">+</Button>
 
-        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Label FontSize="20" Padding="20 0 0 0">0</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">,</Label>
-        </StackPanel>
-        <StackPanel Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Label FontSize="20">=</Label>
-        </StackPanel>
+        <!--Fila 5-->
+        <Button FontSize="20" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0">0</Button>
+        <Button FontSize="20" Grid.Row="5" Grid.Column="2">,</Button>
+        <Button FontSize="20" Grid.Row="5" Grid.Column="3">=</Button>
+        
     </Grid>
 </Window>
