@@ -8,7 +8,11 @@ namespace Business.Operations
 {
     public class AddOperation: OperationBase
     {
-        public AddOperation(double value = 0):base("+",value)
+        public AddOperation(double value):base("+",value)
+        {
+
+        }
+        public AddOperation() : base("+")
         {
 
         }

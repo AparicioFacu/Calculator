@@ -8,10 +8,14 @@ namespace Business.Operations
 {
     public abstract class OperationBase
     {
-        public OperationBase(string symbol, double value = 0)
+        public OperationBase(string symbol, double value)
         {
             this.Symbol = symbol;
             this.Value = value;
+        }
+        public OperationBase(string symbol)
+        {
+            this.Symbol = symbol;            
         }
         /// <summary>
         /// Al ser abstract, obligamos a nuestras clases derivadas a implementar el método
@@ -26,7 +30,7 @@ namespace Business.Operations
         /// <summary>
         /// Al no ser ni virtual ni abstract, solamente se puede utilizar
         /// </summary>
-        public double Value { get; init; }
+        public double Value { get; set; }
         public virtual string GetInput()
         {
             return this.Value.ToString();

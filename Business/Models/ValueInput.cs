@@ -9,6 +9,10 @@ namespace Business.Models
 {
     public class ValueInput
     {
+        public ValueInput()
+        {
+           
+        }
         public ValueInput(double value)
         {
             this.Value = value;

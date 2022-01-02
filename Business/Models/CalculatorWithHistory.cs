@@ -11,11 +11,15 @@ namespace Business.Models
     {
         private ValueInput Input { get; set; }
 
+        public CalculatorWithHistory()
+        {
+            this.Input = new ValueInput(0);
+        }
         public double CalculatedResult()
         {
             double result = this.Input.Value;
 
-            foreach(OperationBase op in this.Input.GetOperations())
+            foreach (OperationBase op in this.Input.GetOperations())
             {
                 result = op.CalculateResult(result);
             }
@@ -28,6 +32,11 @@ namespace Business.Models
         public void Add(OperationBase op)
         {
             this.Input.AddOperation(op);
+        }
+
+        public void AddValueToLastOperation(double value)
+        {
+            //this.Input.GetOperations().Last().Value = value;
         }
 
         /// <summary>
