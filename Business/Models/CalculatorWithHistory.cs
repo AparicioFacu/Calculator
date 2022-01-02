@@ -36,7 +36,7 @@ namespace Business.Models
 
         public void AddValueToLastOperation(double value)
         {
-            //this.Input.GetOperations().Last().Value = value;
+            this.Input.GetOperations().Last().Value = value;
         }
 
         /// <summary>
